@@ -1,5 +1,3 @@
----
-
 <h1 align="center">📘 Chapter 1: Basics of C++</h1>
 
 <p align="center">
@@ -63,7 +61,7 @@ cin &gt;&gt; a &gt;&gt; b;
 
 <h2>🔹 3. Data Types</h2>
 
-<table>
+<table border="1" cellpadding="8" cellspacing="0">
 <tr>
 <th>Type</th>
 <th>Example</th>
@@ -113,6 +111,7 @@ bool isValid = true;
 
 <pre><code>int x = 10;</code></pre>
 
+<b>Rules:</b>
 <ul>
 <li>Cannot start with a number</li>
 <li>No spaces allowed</li>
@@ -123,6 +122,8 @@ bool isValid = true;
 
 <h2>🔹 5. Keywords</h2>
 
+<p>Reserved words in C++ (cannot be used as variable names)</p>
+
 <pre><code>int, float, return, if, else, while, class</code></pre>
 
 <p><b>👉 Interview Tip:</b> Keywords cannot be used as identifiers.</p>
@@ -131,25 +132,34 @@ bool isValid = true;
 
 <h2>🔹 6. Operators</h2>
 
-<h3>🔸 Arithmetic Operators</h3>
+<h3>🔸 (A) Arithmetic Operators</h3>
 <pre><code>+  -  *  /  %</code></pre>
 
 <pre><code>
 int a = 10, b = 3;
-cout &lt;&lt; a % b;
+cout &lt;&lt; a % b;   // Output: 1
 </code></pre>
 
-<h3>🔸 Relational Operators</h3>
+<h3>🔸 (B) Relational Operators</h3>
 <pre><code>==  !=  &gt;  &lt;  &gt;=  &lt;=</code></pre>
 
-<h3>🔸 Logical Operators</h3>
+<h3>🔸 (C) Logical Operators</h3>
 <pre><code>&&   ||   !</code></pre>
 
-<h3>🔸 Assignment Operators</h3>
+<pre><code>
+if(a &gt; 0 && b &gt; 0)
+</code></pre>
+
+<h3>🔸 (D) Assignment Operators</h3>
 <pre><code>=   +=   -=   *=   /=</code></pre>
 
-<h3>🔸 Unary Operators</h3>
+<h3>🔸 (E) Unary Operators</h3>
 <pre><code>++   --</code></pre>
+
+<pre><code>
+int x = 5;
+x++;   // 6
+</code></pre>
 
 <p><b>👉 Interview Trap:</b></p>
 <ul>
@@ -161,11 +171,13 @@ cout &lt;&lt; a % b;
 
 <h2>🔹 7. Type Casting</h2>
 
+<h3>✅ Explicit Casting</h3>
 <pre><code>
 int a = 10;
 float b = (float)a;
 </code></pre>
 
+<h3>✅ Implicit Casting</h3>
 <pre><code>
 int a = 10;
 double b = a;
@@ -177,12 +189,15 @@ double b = a;
 
 <pre><code>const int x = 10;</code></pre>
 
+<p>👉 Cannot be modified after initialization.</p>
+
 <hr>
 
 <h2>🔹 9. Comments</h2>
 
 <pre><code>
 // Single-line comment
+
 /* Multi-line comment */
 </code></pre>
 
@@ -192,35 +207,37 @@ double b = a;
 
 <ul>
 <li>Entry point → <code>main()</code></li>
-<li><code>cin</code>, <code>cout</code></li>
-<li>Operators → Important</li>
-<li><code>++x</code> vs <code>x++</code></li>
+<li>Input/Output → <code>cin</code>, <code>cout</code></li>
+<li>Operators → Very important</li>
+<li>Data types → Basic understanding required</li>
+<li><code>++x</code> vs <code>x++</code> → Frequently asked</li>
 </ul>
 
 <hr>
 
 <h2>🧪 Practice Questions</h2>
 
-<h3>Q1</h3>
+<h3>Q1:</h3>
 <pre><code>
 int a = 5;
 cout &lt;&lt; ++a;
 </code></pre>
+<p>👉 Output = ?</p>
 
-<h3>Q2</h3>
+<h3>Q2:</h3>
 <pre><code>
 int a = 5;
 cout &lt;&lt; a++;
 </code></pre>
+<p>👉 Output = ?</p>
 
-<h3>Q3</h3>
+<h3>Q3:</h3>
 <pre><code>
 int a = 10, b = 3;
 cout &lt;&lt; a / b;
 </code></pre>
+<p>👉 Output = ?</p>
 
 <hr>
 
-<p align="center"><b>📌 Next: Control Structures</b></p>
-
----
+<p align="center"><b>📌 Next Chapter: Control Structures</b></p>
