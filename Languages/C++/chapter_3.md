@@ -85,7 +85,7 @@ int main()
     cout << a;
 }
 
-👉 Output: 5 (original value not changed)
+👉 Output: 5
 
 ✅ Call by Reference
 void change(int &x)
@@ -100,7 +100,7 @@ int main()
     cout << a;
 }
 
-👉 Output: 10 (original value changed)
+👉 Output: 10
 
 ⚠️ Interview Difference
 Type	Effect
@@ -138,11 +138,11 @@ int fact(int n)
     return n * fact(n - 1);
 }
 
-👉 Must have a base case to stop recursion
+👉 Must have a base case
 
 ⚠️ Interview Trap
 Missing base case → infinite recursion
-Stack overflow risk
+Stack overflow
 🔹 10. Function Overloading
 
 Same function name with different parameters.
@@ -161,12 +161,12 @@ double add(double a, double b)
 
 ⚡ Quick Interview Recap
 Concept	Key Point
-Function	Reusable code block
-Prototype	Declaration before use
+Function	Reusable block
+Prototype	Declaration
 Call by Value	Copy
 Call by Reference	Original modified ⭐
 Default Arguments	Predefined values
-Recursion	Function calling itself
+Recursion	Self-calling function
 Overloading	Same name, different params
 🧪 Practice Questions
 Q1
