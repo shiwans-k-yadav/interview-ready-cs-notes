@@ -5,5 +5,3 @@ This section contains notes for programming languages commonly used in technical
 Languages Covered
 
 - C++
-- Java
-- Python
